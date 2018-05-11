@@ -12,11 +12,12 @@ body {
   width: 1130px;
 }
 
-#header #title-bar {
+#block-bar {
   border: none;
   height: 80px;
   background-color: #2d3c49;
   margin: 0;
+
 }
 
 #header #my-name {
