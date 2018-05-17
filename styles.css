@@ -4,99 +4,191 @@ body {
   border: 3px solid #2d3c49;
 }
 
+figure, img {
+  width: 100%;
+}
+
+.block-bar {
+  background-color: #2d3c49;
+  border: none;
+  height: 80px;
+  width: 100%;
+  margin: 0;
+}
+
+
+/* page layout styling */
+.container {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+
+  /* adding this for side margins, since flex has finicky container margins */
+  border: 20px solid transparent;
+}
+
+.box {
+  flex: 0 1 auto;
+  width: 100%;
+  margin: auto;
+}
+
+
+.header-container {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  margin: 15px 0;
+}
+
+.header-box {
+  flex: 0 1 auto;
+  max-width: 60%;
+}
+
+
+
+.text-container {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-end;
+}
+
+.text-box {
+  flex: 0 1 auto;
+  margin: auto;
+}
+
+
+.main-container {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-between;
+}
+
+.main-box {
+  flex: 1 1 auto;
+  width: 100%;
+  margin: 20px auto;
+}
+
+@media screen and (max-width: 899px) {
+  .main-box#hero-image {
+    max-height: 600px;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .main-box#hero-image {
+    max-width: 1000px;
+    max-height: 600px;
+  }
+}
+
+
+.photo-container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+
+.photo-box {
+  flex: 0 1 auto;
+  width: 100%;
+  margin: 5px auto;
+}
+
+
+
+@media screen and (max-width: 599px) {
+  .box#featured-work {
+    margin: 15% 0;
+  }
+
+  .photo-box {
+    flex: 0 1 auto;
+    margin: 5px auto;
+    width: 100%;
+    max-width: 400px;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .box#featured-work {
+    margin: 8% 0;
+  }
+
+  .photo-box {
+    flex: 0 1 auto;
+    margin: 5px auto;
+    width: 100%;
+    max-width: 250px;
+  }
+}
 
 
 /* header styling */
 #header {
-  margin: auto 60px;
-  width: 1130px;
+  width: 100%;
 }
 
-#block-bar {
-  border: none;
-  height: 80px;
-  background-color: #2d3c49;
-  margin: 0;
-
-}
-
-#header #my-name {
+#my-name {
   font-family: "Raleway";
   font-size: 50px;
+  line-height: 1.25em;
   text-align: right;
-  width: 1130px;
-  margin-top: 30px;
+  margin: 0;
 }
 
-#header #occupation {
+#occupation {
   font-family: "Raleway";
   font-size: 24px;
+  line-height: 1.25em;
   text-align: right;
-  width: 1130px;
+  margin: 0;
 }
 
-#header #logo {
-  width: 100px;
-  float: left;
-  margin: 20px 0;
+#logo {
+  height: 25%;
+  max-height: 200px;
+  width: 25%;
+  max-width: 200px;
+  margin: 10px 0 10px;
 }
 
-#header #divider {
+#divider {
   border: none;
   height: 5px;
   background-color: #7d97ad;
-  margin: 0;
-  width: 1130px;
+  margin: 15px 0;
+  width: 100%
 }
 
 
-
 /* hero image styling */
-#coding-image {
-  width: 1130px;
-  margin: 30px 60px 0;
+#hero-image {
+
 }
 
 
 /* featured work styling */
-#featured-work {
-  margin: 60px;
-  width: 1130px;
-}
-
 #featured-work h3 {
   font-family: "Raleway";
   font-size: 36px;
   color: #7d97ad;
-  margin: 20px 0 10px;
+  text-align: center;
+  margin-top: 1.5em;
+  margin-bottom: 0.75em;
 }
 
-#featured-work .container {
-  min-height: 400px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  width: 100%;
-  padding: 0;
-}
-
-#featured-work .container::before,
-#featured-work .container::after {
-  content: none;
-}
-
-#featured-work .entry {
+#featured-work figure {
   font-family: "Raleway";
   font-size: 20px;
-  width: 30%;
-}
-
-#featured-work .entry figure {
-  display: block;
   text-align: center;
 }
 
-#featured-work .entry figure img {
-  width: 100%;
+#featured-work figure img {
   padding-bottom: 10px;
 }
