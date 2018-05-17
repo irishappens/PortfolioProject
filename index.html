@@ -3,15 +3,17 @@
 
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio Site</title>
-    <link rel="stylesheet" type="text/css" href="styles.css">
+
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
     <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
     <link
       rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
       integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <script
       src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-      integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E="crossorigin="anonymous">
+      integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E=" crossorigin="anonymous">
     </script>
     <script
       src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
@@ -20,60 +22,60 @@
 
 
   <body>
+    <hr class="block-bar">
 
-    <hr id="block-bar">
+    <div class="container">
+      <div class="box header-container" id="header">
+        <img class="header-box" id="logo" src="img/my-logo.jpg" alt="my-logo">
+        <div class="text-container header-box">
+          <h1 class="text-box" id="my-name">IRIS WANG</h1>
+          <h3 class="text-box" id="occupation">WEB DEVELOPER</h3>
+        </div>
+      </div>
 
-    <div id="header">
-      <img src="https://c1.staticflickr.com/1/976/40219774820_fcfa1a2047_q.jpg" alt="my-logo" id="logo">
-      <h1 id="my-name">IRIS WANG</h1>
-      <h3 id="occupation">WEB DEVELOPER</h3>
       <hr id="divider">
-    </div>
 
-    <div id="big-picture">
-      <img src="https://c1.staticflickr.com/1/943/41306195794_a0da94b80d_b.jpg" alt="coding-image" id="coding-image">
-    </div>
+      <main class="box main-container">
+        <img class="main-box" id="hero-image" src="img/clay-display.jpg" alt="clay-display">
 
-    <div id="featured-work">
-      <h3>Featured Work</h3>
+        <div class="main-box" id="featured-work">
+        <h3>Featured Work</h3>
 
-      <div class="container">
-          <div class="entry">
-            <figure>
+          <div class="photo-container">
+
+            <figure class="photo-box">
               <a href="https://www.flickr.com" target="_top">
-                <img src="https://c1.staticflickr.com/9/8285/29149772690_4c9c5fea38_k.jpg" alt="mountain view">
+                <img src="img/mountain-view.jpg" alt="mountain view">
               </a>
               <figcaption> LAKE LOUISE </figcaption>
               <p>http://flickr.com</p>
             </figure>
-          </div>
 
           <!--2nd image-->
-          <div class="entry">
-            <figure>
+            <figure class="photo-box">
               <a href="https://www.flickr.com/photos/144936051@N05/30500151993/in/dateposted-public/" target="_top">
-                <img src="https://c1.staticflickr.com/9/8540/30011853591_7abfa4fe3b_k.jpg" alt="clay figures">
+                <img src="img/clay-figures.jpg" alt="clay figures">
               </a>
               <figcaption> HEAD TRIO </figcaption>
               <p>http://flickr.com</p>
             </figure>
-          </div>
 
           <!--3rd image-->
-          <div class="entry">
-            <figure>
+            <figure class="photo-box">
               <a href="https://www.flickr.com/photos/144936051@N05/30500151993/in/dateposted-public/">
-                <img src="https://c1.staticflickr.com/6/5282/29465649784_a89dd0a269_k.jpg" alt="cat drawing">
+                <img src="img/cat-drawing.jpg" alt="cat drawing">
               </a>
-            <figcaption> CAT SKETCH </figcaption>
-            <p>http://flickr.com</p>
+              <figcaption> CAT SKETCH </figcaption>
+              <p>http://flickr.com</p>
             </figure>
-          </div>
 
+          </div>
         </div>
+
+      </main>
     </div>
 
-  <hr id="block-bar">
+    <hr class="block-bar">
   </body>
 
 </html>
